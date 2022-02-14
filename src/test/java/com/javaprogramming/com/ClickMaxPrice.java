@@ -26,6 +26,8 @@ public class ClickMaxPrice {
 		WebElement ele=driver.findElement(By.xpath("//div[@class='inventory_item_price' and text()='"+maxPrice+"']/following-sibling::button"));
 		ele.click();
 		
+		
+		
 	}
 	
 	

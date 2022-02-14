@@ -1,6 +1,6 @@
 package com.javaprogramming.com;
 
-public class Employee {
+public class Employee   {
 	
 	String eName;
 	int eno;
@@ -35,7 +35,7 @@ public class Employee {
 	}
 
 
-	public int geteMark() {
+	public Integer geteMark() {
 		return eMark;
 	}
 
@@ -49,6 +49,10 @@ public class Employee {
 	public String toString() {
 		return "Employee [eName=" + eName + ", eno=" + eno + ", eMark=" + eMark + "]";
 	}
+
+
+	
+	
 	
 	
 

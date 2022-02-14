@@ -1,11 +1,19 @@
 package com.javaprogramming.utility;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
+import java.util.Set;
+import java.util.Map.Entry;
 import java.util.function.BiPredicate;
 import java.util.function.IntToDoubleFunction;
 import java.util.function.Supplier;
 import java.util.function.ToIntFunction;
+import java.util.stream.Collectors;
 
 public interface Utility {
 	
@@ -51,5 +59,36 @@ public interface Utility {
 		IntToDoubleFunction f= e -> e*e;
 		return f.applyAsDouble(x);
 	}
+	
+	
+	
+	static <T> void tracerseList(Set<T> T) {
+		
+		T.stream().forEach(System.out::println);
+	}
+	
+	
+	static boolean checkValueInList(List<Integer> list, int value) {
+		
+		return list.stream().anyMatch(i -> i.equals(value));
+	}
+	
+	static <T> long checkCountofValueinList(List<T> T, Object obj) {
+		
+		return T.stream().filter(i -> i.equals(obj)).count();
+	}
+	
+	static  void traverseHashMap(Map<Integer, String> hm) {
+		
+		hm.forEach((k,v) -> System.out.println("Key is " + k + " Value is " + v));
+	}
+	
+	
+	static Map<Integer, String> sortedMap(Map<Integer, String> map){
+		
+		return map.entrySet().stream().sorted(Entry.comparingByKey()).collect(Collectors.toMap(Entry::getKey, Entry::getValue, (e1,e2) -> e1,LinkedHashMap::new));
+	}
+
+	
 
 }
