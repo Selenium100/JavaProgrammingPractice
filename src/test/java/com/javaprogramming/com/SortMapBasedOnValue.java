@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.javaprogramming.com;
 
 import java.util.ArrayList;
@@ -12,10 +10,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/**
- * @author d955012
- *
- */
+
 public class SortMapBasedOnValue {
 
 	

@@ -1,8 +1,7 @@
 package com.javaprogramming.com;
 
 import java.util.ArrayList;
-import java.util.function.Supplier;
-import java.util.stream.Stream;
+
 
 public class MinandMaxValueFromList {
 

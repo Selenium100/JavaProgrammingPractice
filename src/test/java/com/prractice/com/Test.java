@@ -25,21 +25,12 @@ public class Test {
 	public static void main(String[] args) {
 
 		
-		Employee e1=new Employee("nitya", 150, 80);
-		Employee e2=new Employee("abhay", 160, 70);
-		Employee e3=new Employee("bikash", 170, 40);
-		Employee e4=new Employee("viswa", 180, 30);
-		Employee e5=new Employee("abhishek", 190, 20);
 		
-		ArrayList<Employee> empList=new ArrayList<Employee>();
-		empList.add(e1);
-		empList.add(e2);
-		empList.add(e3);
-		empList.add(e4);
-		empList.add(e5);
+			
+			Utility u= () -> System.out.println("Nitya is good");
+			u.m1();
 		
 		
-		empList.stream().forEach(System.out::println);
 		
 		
 		
